@@ -1,0 +1,11 @@
+/ {
+    chosen {
+        zmk,kscan = &fake_kscan;
+    };
+};
+
+&fake_kscan {
+    compatible = "zmk,kscan-gpio-direct";
+    row-gpios = <>;
+    col-gpios = <>;
+};

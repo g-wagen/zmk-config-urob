@@ -1,0 +1,12 @@
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                &bt BT_CLR    /* Clear all BLE bonds */
+                &reset        /* Restart dongle */
+            >;
+        };
+    };
+};
