@@ -1,4 +1,4 @@
-#include "../../shared.dtsi"
+#include "../../../shared.dtsi"
 
 // Dongle doesn’t have actual keys, just behaviors for wireless, combos, leader key
 ZMK_LAYER(minimal,
