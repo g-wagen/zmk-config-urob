@@ -1,6 +1,4 @@
-# Copyright (c) 2020 The ZMK Contributors
-# SPDX-License-Identifier: MIT
-
+# Dongle settings
 if SHIELD_CRADIO_DONGLE
 
 config ZMK_KEYBOARD_NAME
@@ -14,6 +12,8 @@ config ZMK_USB
 
 endif
 
+
+# General settings
 if SHIELD_CRADIO_LEFT || SHIELD_CRADIO_RIGHT || SHIELD_CRADIO_DONGLE
 
 config ZMK_SPLIT
@@ -21,5 +21,13 @@ config ZMK_SPLIT
 
 config ZMK_BLE
 	default y
+
+endif
+
+# Explicit halves settings
+if SHIELD_CRADIO_LEFT || SHIELD_CRADIO_RIGHT
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+    default n
 
 endif
