@@ -1,1 +1,5 @@
-# empty; dongle has no keys
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+    };
+};
